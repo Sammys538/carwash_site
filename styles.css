@@ -1,0 +1,969 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+.logo{
+    height: 150px;
+    margin-top: 50px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: white;
+    color: #36302a;
+    margin: 0;
+    padding: 0;
+}
+
+#land{
+    display: flex;
+    font-family: 'Trade Winds', cursive;
+    background-image: url("images/foamCar.jpg");
+    background-size: cover;
+    scroll-margin-top: 100px;
+    height: 650px;
+    background-color: #000;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    text-align: center;
+    color: #E6F0FA;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#header a{
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+
+#header {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    height: 105px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    color: #36302a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainNav, #mainNav a{
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    color:#36302a;
+    font-size: 15px;
+}
+
+
+
+#mainNav:hover, #mainNav a:hover {
+    color: #E5C100;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#ownerInfo h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Trade Winds', cursive;
+}
+
+#ownerInfo p{
+    font-size: clamp(.8rem, 1.5rem, 2rem);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 700px){
+    #ownerInfo p{
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
+}
+
+#services{
+    margin: auto;
+    padding: 100px 20px;
+    scroll-margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services #washHead{
+    display: flex;
+    justify-content: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: clamp(30px, 130px, 300px);
+    margin-bottom: 1rem;
+}
+
+#services #serHead{
+    display: flex;
+    font-family: 'Trade Winds', cursive;
+    justify-content: center;
+    font-size: clamp(30px, 3.5rem, 6rem);
+    margin-bottom: 1.2em;
+}
+
+
+#detail h3{
+    font-size: clamp(200px, 240px, 250px);
+    text-align: center;
+    margin-bottom: -40px;
+    background: url("images/airportCar.jpg") no-repeat 50% 58%;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+#washingPack{
+    display: flex;
+    background-image: url("images/blueCar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 60px;
+    background-position: 30% 67%;
+}
+
+#washingPack article{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    height: 450px;
+    max-width: 100%;
+    min-width: 290px;
+}
+
+#washingPack article h3{
+    text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: clamp(1.5rem, 1.7rem, 1.8rem);
+    color: black;
+    font-weight: bold;
+}
+
+#washingPack h4{
+    align-items: center;
+    padding-left: 20px;
+}
+
+.planPrice{
+    text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: clamp(1rem, 1.25rem, 1.3rem);
+    color: blue;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.washPackList{
+    display:flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.washPackSection ul{
+    padding-left: 30px;
+    margin: 0;
+    list-style: disc;
+    font-size: clamp(.9rem, 1.05vw, 1.5rem);
+    color: black;
+    font-weight: bold;
+    max-width: 80%;
+    margin-right: 50px;
+}
+
+.washPackSection{
+    flex: 1;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    color: brown;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+#packages{
+    display: flex;
+    background-image: url("images/sunCar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detailPrice{
+    text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: clamp(1rem, 1.25rem, 1.3rem);
+    color: rgb(16, 172, 16);
+    font-weight: bold;
+}
+
+#packages article{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    height: 560px;
+    max-width: 90%;
+    min-width: 280px;
+}
+
+
+#packages article h3{
+    text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: clamp(1.5rem, 1.7rem, 1.8rem);
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+}
+
+/* LISTS COLOR */
+#packages ul{
+    padding-left: 15px;
+    margin: 0;
+    list-style: disc;
+    font-size: clamp(.73rem, 1vw, 1rem);
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+    max-width: 100%;
+    margin-right: 30px;
+}
+
+#packages h4{
+    align-items: center;
+    padding-left: 15px;
+}
+
+#package-lists{
+    display:flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#package-section{
+    flex: 1;
+    font-size: clamp(1rem, 1.15rem, 1.2rem);
+    color: #FFC107;
+    padding-right: 20px;
+}
+
+#extras{
+    display: flex;
+    background-image: url("images/sunCar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: 50% 70%;
+    padding-top: 20px;
+}
+
+#extras div{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#add-ons{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+#add-ons h3{
+    align-items: center;
+    font-size: clamp(1.5rem, 1.9rem, 2rem);
+    font-family: 'Protest Guerrilla', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+}
+
+#add-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+#add-section table{
+    width: 300px;
+    padding-right: 60px;
+    margin: 0 auto;
+    border-spacing: 40px 0px;
+}
+
+#add-section thead{
+    font-size: clamp(1rem, 1.1rem, 1.2rem);
+    color: #FFC107;
+    padding-left: 25px;
+}
+
+#add-section tbody{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+    padding-right: 50px;
+    width: 200px;
+}
+
+#add-section td{
+    min-width: 120px;
+    padding-bottom: 10px;
+}
+
+#vehicleType{
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    margin: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+}
+
+#vehicleType h3{
+    font-size: clamp(1.5rem, 1.9rem, 2rem);
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+#vehicleType ul{
+    list-style: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+}
+
+.individual-services{
+    color: #FFC107;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    font-size: clamp(.75rem, 1.5vw, 1.8rem);
+}
+
+.note{
+    text-align: center;
+    font-family: 'Trade Winds', cursive;
+    color: red;
+    background-color: yellow;
+    font-size: 1.4vw;
+    margin-bottom: 15px;
+}
+
+#notice{
+    text-align: center;
+    font-size: clamp(1rem, 1.6rem, 1.7rem);
+    margin-bottom: 15px;
+    font-style: italic;
+    max-width: 50%;
+    flex: 1;
+}
+
+#trash{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+
+#tserviceSplit{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    max-width: 50%;
+    flex: 1;
+}
+
+#tservices{
+    flex: 1;
+    display: flex;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+    flex-direction: column;
+    background-image: url("images/trashBins.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    margin-bottom: 10px;
+    min-width: 100%;
+}
+
+#tservices #binEx{
+    font-size: clamp(1rem, 1.4rem, 2.8rem);
+}
+
+.binsPrice{
+    color:black;
+    padding-top: 70px;
+    text-shadow: none;
+    font-size: clamp(1rem, 1.8vw, 2.5rem);
+}
+
+.binsPrice p{
+    font-size: clamp(1rem, 2vw, 2.5rem);
+}
+
+#tservices h3{
+    font-size: 2rem;
+    font-family: 'Nosifer', cursive;
+    
+}
+
+#tservices h4{
+    font-size: 1.75rem;
+}
+
+#tservices ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(128, 0, 32);
+    font-weight: bold;
+    background-image: url("images/cleaningSidewalk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    background-position: 10% 98%;
+}
+
+#right h4{
+    font-size: 1.75rem;
+    font-family: 'Nosifer', cursive;
+}
+
+#right ul{
+    list-style: none;
+    font-size: clamp(.8rem, 1.5rem, 2rem);
+}
+
+.trashImg{
+    width: 100%;
+    height: 550px;
+}
+
+
+#about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+video{
+    height: 500px;
+    width: 50%;
+}
+
+#businessAbout{
+    margin-left: 50px;
+    width: 50%;
+}
+
+#businessAbout h2{
+    font-size: 2rem;
+    font-family: 'Trade Winds', cursive;
+}
+
+#businessAbout p{
+    font-size: clamp(1rem, 1.3rem, 1.5rem);
+}
+
+#businessAbout ul{
+    font-size: clamp(1rem, 1.3rem, 1.5rem);
+}
+
+.image{
+    width: 50%;
+    height: auto;
+}
+
+#contact{
+    height:80%;
+    max-width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#contact h2{
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-family: 'Trade Winds', cursive;
+}
+
+.info{
+    flex:  1 350px;
+    font-size: clamp(.9rem, 1.7vw, 2.5rem);
+    max-width: 40%;
+    max-height: 400px;
+    text-align: center;
+}
+
+.info #hours{
+    max-height: 80%;
+}
+
+#hours h3{
+    font-size: clamp(1rem, 1.8vw, 1.8rem);
+}
+
+#numbers #tagLine{
+    font-style: italic;
+}
+
+#map-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    max-width: 80%;
+    flex: 1;
+}
+
+#map-area iframe{
+    width: 100%;          /* almost full width, responsive */
+    height: 300px;
+    border: 0;
+}
+
+#serving{
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.25rem;
+}
+
+#serving h3{
+    font-family: 'Trade Winds', cursive;
+}
+
+.fee{
+    font-family: 'Trade Winds', cursive;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    border-top: solid;
+    border-color: #000;
+    height: 100%;
+}
+
+#footer-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#footer-top h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#footer-middle .logo{
+    height: 250px;
+}
+  
+#footer-top p a{
+    display: block;
+    width: fit-content;
+    margin: 2px 0;
+    text-decoration: none;
+    color: white;
+}
+
+#footer-bottom .icons {
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+#footer-bottom .icons a:hover {
+    color: #0077ff;
+}
+
+#footer-bottom{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer-bottom a {
+    text-decoration: none;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+  
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+  
+.close:hover {
+    color: #000;
+}
+
+
+@media (min-width: 800px) and (max-width: 1280px){
+    .washPackSection ul{
+        max-width: 80px;
+    }
+    #extras {
+      background-image: none;
+    }
+
+    #services #washHead{
+        font-size: 120px;
+    }
+
+    #packages ul{
+        font-size: .72rem;
+    }
+
+    #packages article{
+        height: 540px;
+    }
+
+    #package-lists{
+        gap: 1px;
+    }
+}
+
+@media (max-width: 480px){
+    #packages ul{
+        font-size: .8rem;
+    }
+
+    #package-lists{
+        gap: 1px;
+    }
+}
+
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+    #ownerInfo p{
+        font-size: clamp(.8rem, 1.5vw, 2rem);
+    }
+
+    .info{
+        font-size: clamp(1rem, 1.37vw, 1.8rem);
+    }
+
+    #packages ul{
+        font-size: clamp(1rem, .92vw, 2.5rem);
+    }
+
+    #washingPack article h3{
+        height: 50px;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+
+    #washingPack .planPrice{
+        font-size: 35px;
+        padding-top: 5px;
+    }
+
+    .washPackSection ul{
+        font-size: 20.5px;
+    }
+
+    #packages article h3{
+        height: 50px;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+
+    #packages .detailPrice{
+        font-size: 35px;
+        padding-top: 5px;
+    }
+
+    #extras{
+        background-position: 50% 48%;
+    }
+
+    #add-section tbody{
+        font-size: 20px;
+    }
+
+    #vehicleType{
+        font-size: 20px;
+    }
+
+    .note{
+        font-size: clamp(1rem, 3vw, 3rem);
+        height: 60px;
+    }
+
+    #header{
+        height: 150px;
+    }
+
+    .logo{
+        height: 200px;
+        margin-right: 10px;
+    }
+
+    #mainNav a{
+        font-size: clamp(1rem, 1.5vw, 2rem)
+    }
+
+    #map-area #serving{
+        font-size: clamp(1rem, 1.2vw, 2.5rem);
+    }
+
+    #footer-top{
+        font-size: clamp(1rem, 1vw, 2.5rem);
+    }
+
+    #footer-bottom .icons i{
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width: 2559px) and (max-width: 3000px) {
+
+    #ownerInfo p{
+        font-size: clamp(.8rem, 1.5vw, 2rem);
+    }
+
+    .info{
+        font-size: clamp(1rem, 1.37vw, 1.8rem);
+    }
+
+    #packages ul{
+        font-size: clamp(1rem, .84vw, 2.5rem);
+    }
+
+    #washingPack article h3{
+        height: 50px;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+
+    #washingPack .planPrice{
+        font-size: 35px;
+        padding-top: 5px;
+    }
+
+    #packages article h3{
+        height: 50px;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+
+    #packages .detailPrice{
+        font-size: 35px;
+        padding-top: 5px;
+    }
+
+
+    #add-section tbody{
+        font-size: clamp(1rem, .9vw, 2.5rem);
+    }
+
+    #vehicleType{
+        font-size: clamp(1rem, .9vw, 2.5rem);
+    }
+
+    .note{
+        font-size: clamp(1rem, 3vw, 3rem);
+        height: 60px;
+    }
+
+    #package-section{
+        padding-left: 5px;
+    }
+
+    #notice{
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+    }
+
+    #tservices #binEx, #tservices ul{
+        font-size: clamp(1rem, 1.3vw, 2.5rem);
+    }
+
+    #tservices .binsPrice h4{
+        font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+
+    #right ul{
+        font-size: clamp(1rem, 1.3vw, 2.5rem);
+    }
+
+    #businessAbout h2{
+        font-size: 60px;
+    }
+
+    #businessAbout p, #businessAbout ul{
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+    }
+
+    #contact{
+        height: 800px;
+    }
+
+    .info{
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+        margin-top: -250px;
+        margin-bottom: 50px;
+    }
+
+    .info #numbers h2{
+        font-size: 60px;
+    }
+
+    .info #hours h3{
+        font-size: 40px;
+    }
+
+    #map-area iframe{
+        height: 550px;
+        max-width: 100%;
+    }
+
+    #map-area #serving{
+        font-size: clamp(1rem, 1.2vw, 2.5rem);
+    }
+
+    #footer-top h4{
+        font-size: clamp(1rem, 1.2vw, 2.5rem);
+    }
+    #footer-top{
+        font-size: clamp(1rem, 1vw, 2.5rem);
+    }
+
+    #footer-middle{
+        width: 700px;
+        text-align: center;
+        height: 450px;
+    }
+
+    #footer-middle .logo{
+        width: 500px;
+        height: auto;
+    }
+
+    #header{
+        height: 150px;
+    }
+
+    #mainNav a{
+        font-size: clamp(1rem, 1.5vw, 2rem)
+    }
+
+    .logo{
+        height: 230px;
+    }
+
+    #footer-bottom{
+        font-size: clamp(1rem, 1.2vw, 2.5rem);
+    }
+
+    #footer-bottom .icons i{
+        font-size: 50px;
+    }
+
+    #extras{
+        background-position: 50% 32%;
+    }
+
+}
